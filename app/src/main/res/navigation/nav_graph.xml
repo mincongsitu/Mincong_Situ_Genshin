@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startingPageFragment">
+
+    <fragment
+        android:id="@+id/startingPageFragment"
+        android:name="com.example.mincong_situ_genshin.fragments.StartingPageFragment"
+        android:label="StartingPageFragment" >
+        <action
+            android:id="@+id/action_startingPageFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment" />
+        <action
+            android:id="@+id/action_startingPageFragment_to_weaponListFragment"
+            app:destination="@id/weaponListFragment" />
+        <action
+            android:id="@+id/action_startingPageFragment_to_artifactListFragment2"
+            app:destination="@id/artifactListFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.example.mincong_situ_genshin.fragments.CharacterListFragment"
+        android:label="CharacterListFragment" >
+        <action
+            android:id="@+id/action_characterListFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.example.mincong_situ_genshin.fragments.CharacterDetailFragment"
+        android:label="CharacterDetailFragment">
+
+        <argument
+            android:name="character_name"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/weaponListFragment"
+        android:name="com.example.mincong_situ_genshin.fragments.WeaponListFragment"
+        android:label="WeaponListFragment" >
+        <action
+            android:id="@+id/action_weaponListFragment_to_weaponDetailFragment2"
+            app:destination="@id/weaponDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/weaponDetailFragment2"
+        android:name="com.example.mincong_situ_genshin.fragments.WeaponDetailFragment"
+        android:label="WeaponDetailFragment">
+
+        <argument
+            android:name="weapon_name"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/artifactListFragment2"
+        android:name="com.example.mincong_situ_genshin.fragments.ArtifactListFragment"
+        android:label="ArtifactListFragment" >
+        <action
+            android:id="@+id/action_artifactListFragment2_to_artifactDetailFragment"
+            app:destination="@id/artifactDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artifactDetailFragment"
+        android:name="com.example.mincong_situ_genshin.fragments.ArtifactDetailFragment"
+        android:label="ArtifactDetailFragment">
+
+        <argument
+            android:name="artifact_name"
+            app:argType="string"/>
+    </fragment>
+
+</navigation>

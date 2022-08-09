@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starybackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_weapon_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:srcCompat="@drawable/goblet_of_eonothem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_goblet_of_eonothem"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:srcCompat="@drawable/goblet_of_eonothem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/goblet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="goblet Name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/iv_goblet_of_eonothem"
+        app:layout_constraintEnd_toEndOf="@id/iv_goblet_of_eonothem"
+        app:layout_constraintTop_toBottomOf="@id/iv_goblet_of_eonothem"/>
+
+    <ImageView
+        android:id="@+id/iv_flower_of_life"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:srcCompat="@drawable/goblet_of_eonothem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_goblet_of_eonothem"/>
+
+    <TextView
+        android:id="@+id/flower_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="flower Name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/iv_flower_of_life"
+        app:layout_constraintEnd_toEndOf="@id/iv_flower_of_life"
+        app:layout_constraintTop_toBottomOf="@id/iv_flower_of_life"/>
+
+    <ImageView
+        android:id="@+id/iv_circlet_of_logos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:srcCompat="@drawable/goblet_of_eonothem"
+        app:layout_constraintTop_toBottomOf="@id/iv_goblet_of_eonothem"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/circlet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="circlet Name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/iv_circlet_of_logos"
+        app:layout_constraintEnd_toEndOf="@id/iv_circlet_of_logos"
+        app:layout_constraintTop_toBottomOf="@id/iv_circlet_of_logos"/>
+
+    <ImageView
+        android:id="@+id/iv_plume_of_death"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:srcCompat="@drawable/goblet_of_eonothem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_sands_of_eon"
+        app:layout_constraintTop_toBottomOf="@id/iv_flower_of_life"/>
+
+    <TextView
+        android:id="@+id/plume_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="plume Name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/iv_plume_of_death"
+        app:layout_constraintEnd_toEndOf="@id/iv_plume_of_death"
+        app:layout_constraintTop_toBottomOf="@id/iv_plume_of_death"/>
+
+    <ImageView
+        android:id="@+id/iv_sands_of_eon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:srcCompat="@drawable/goblet_of_eonothem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_plume_of_death"
+        app:layout_constraintTop_toBottomOf="@id/iv_circlet_of_logos"/>
+
+    <TextView
+        android:id="@+id/sand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sand Name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/iv_sands_of_eon"
+        app:layout_constraintEnd_toEndOf="@id/iv_sands_of_eon"
+        app:layout_constraintTop_toBottomOf="@id/iv_sands_of_eon"/>
+
+
+    <TextView
+        android:id="@+id/tv_artifact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sand_name"/>
+
+    <TextView
+        android:id="@+id/tv_two_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:text="2 Piece Bonus: "
+        app:layout_constraintTop_toBottomOf="@id/tv_artifact_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_four_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:text="4 Piece Bonus"
+        app:layout_constraintTop_toBottomOf="@id/tv_two_bonus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
